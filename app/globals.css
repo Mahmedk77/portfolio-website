@@ -112,6 +112,44 @@
   --sidebar-ring: oklch(0.551 0.027 264.364);
 }
 
+@theme {
+  --color-white: white;
+  --color-black: black;
+  --color-dark2: #050505;
+  --color-dark4: #0A0A0B;
+  --color-dark6: #0F0F10;
+  --color-dark7: #121212;
+  --color-dark8: #141415;
+  --color-dark10: #19191A;
+  --color-dark13: #202021;
+  --color-dark16: #28282A;
+  --color-dark18: #2D2D2F;
+  --color-dark22: #373739;
+  --color-dark25: #3E3E41;
+
+  --color-grey40: #666666;
+  --color-grey46: #757575;
+  --color-grey60: #999999;
+  --color-grey80: #CCCCCC;
+  --color-grey85: #D9D9D9;
+  --color-grey90: #E6E6E6;
+  --color-grey95: #F2F2F2;
+  --color-grey99: #FCFCFC;
+
+  /* Font Sizes */
+  --text-heading-huge: 2.13rem; /* 34.08px */
+  --text-heading-xl: 1.63rem;   /* 26.08px */
+  --text-heading-l: 1.38rem;    /* 22.08px */
+  --text-heading-m: 1.25rem;    /* 20px */
+  --text-heading-s: 1.13rem;    /* 18.08px */
+  --text-heading-xs: 1rem;      /* 16px */
+
+  --text-l: 1.13rem;            /* 18.08px */
+  --text-m: 0.94rem;            /* 15.04px */
+  --text-s: 0.88rem;            /* 14.08px */
+}
+
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
