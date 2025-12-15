@@ -27,7 +27,6 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${spaceGrotesk.className} antialiased `}
-        
       >
         <main className="flex flex-row ">
         <LeftSidebar />

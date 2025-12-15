@@ -1,41 +1,50 @@
 "use client";
 
-
 import React, { useState } from 'react'
 import { Button } from '../ui/button'
-import { Mail, User, Zap } from 'lucide-react'
+import { ArrowUp, Mail, User, Zap } from 'lucide-react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import Image from 'next/image';
 
 const LeftSidebar = () => {
 
   const sidebarList = [
-    {label: "Home", route:"/", icon: <User className="text-grey60"/>},
-    {label: "Services", route:"/services", icon: <Zap className="text-grey60"/>},
-    {label: "Contact", route:"/contact", icon: <Mail className="text-grey60"/>},
+    {label: "Home", route:"/", icon: <User className="text-grey60" size={25}/>},
+    {label: "Services", route:"/services", icon: <Zap className="text-grey60" size={25}/>},
+    {label: "Contact", route:"/contact", icon: <Mail className="text-grey60" size={25}/>},
   ]
   
-  const path = usePathname();
+  const pathName = usePathname();
   
   return (
-    <section className='flex flex-col items-end justify-between px-8 py-12 border bg-[#0F0F0F]'>
-      <div className='text-white'>Profile Image</div>
+    <section className='flex flex-col items-end justify-between pl-18 pr-12 py-12 bg-[#0F0F0F] max-lg:hidden'>
+      <Image 
+      src={"/profile.svg"}
+      alt='profile_icon'
+      width={64}
+      height={64}
+      priority
+      className='object-contain  border rounded-full p-5'/>
       <div className='flex flex-col items-center justify-center gap-4'>
         {
           sidebarList.map((item) =>{
-            const isActive = (path.includes(item.route) && item.route.length > 1) || path === item.route
+            const isActive = (pathName.includes(item.route) && item.route.length > 1) || pathName === item.route
             return (
-              <Link key={item.label} href={`${item.route}`} className={`flex rounded-md p-2 ${ isActive ? "bg-[#18181A]" : "bg-none"}`}>
+              <Link 
+              key={item.label} href={`${item.route}`} 
+              className={`flex rounded-md p-2 ${ isActive ? "bg-[#18181A]" : "bg-none"}
+              hover:bg-[#18181A] transition-all duration-200`}>
                 {item.icon}
-                <p className='sm:hidden'>{item.label}</p>
+                
               </Link>
           )})
         }
         
       </div>
-      <div>
-        <Button>
-          <Mail color='#D9D9D9'/>
+      <div className=''>
+        <Button className='bg-[#0F0F0F] hover:bg-[#18181A] cursor-pointer transition-all duration-200'>
+          <ArrowUp className="text-grey60 size-6"   />
         </Button>
       </div>
     </section>
