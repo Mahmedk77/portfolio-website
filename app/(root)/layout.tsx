@@ -28,11 +28,13 @@ export default function RootLayout({
       <body
         className={`${spaceGrotesk.className} antialiased `}
       >
-        <main className="flex flex-row ">
+        <main className="flex flex-row h-screen">
         <LeftSidebar />
           <section className="flex min-h-screen flex-1 flex-col">
             <Topbar />
+            <div className='px-[120px] py-[100px] bg-[rgb(15,15,15)] w-full overflow-y-scroll max-h-screen no-scrollbar'>
             {children}
+            </div>
           </section>
         <RightSidebar />
         </main>

@@ -19,7 +19,7 @@ const RightSidebar = () => {
   const pathName = usePathname();
 
   return (
-    <section className='flex flex-col items-start justify-center pr-18 pl-12 py-12 bg-[#0F0F0F] max-lg:hidden'>
+    <section className=' flex flex-col items-start justify-center border-l pr-18 pl-12 py-12 bg-[#0F0F0F] max-lg:hidden'>
      
       <div className='flex flex-col items-center justify-center gap-4 max-sm:hidden'>
         {
