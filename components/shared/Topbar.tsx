@@ -16,7 +16,7 @@ import Link from 'next/link';
 
     return (
 
-      <nav className='px-6 py-6 bg-[rgb(15,15,15)] border-b '>
+      <nav className='px-6 py-6 bg-[rgb(15,15,15)] border-b border-[#18181A]'>
         <div className='flex flex-row justify-between items-center '>
             <div className='max-sm:hidden flex gap-2 items-center justify-center border border-grey40 px-4 py-2 rounded-full bg-[#18181A] '>
               <Dot color="#00c278"/>

@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
     {/* INTRODUCTION DIV */}
-      <div className='flex gap-2 items-center justify-center'>
+      <section className='flex gap-2 items-center justify-center'>
         <div className='w-64 h-64 border rounded-md bg-[#18181A]'>
           {/* IMAGE */}
         </div>
@@ -18,7 +18,7 @@ const Home = () => {
           <p className='text-heading-m font-semibold text-grey60'>👋 Hello I Am</p>
           <h3 className='text-heading-huge font-bold text-white'>Muhammad Ahmed</h3>
           <p className='text-grey60 font-semibold text-l mt-40/5'>
-            Experienced web developer from Pakistan,
+            Experienced software engineer from NUST Pakistan,
             <br />
             with a passion for crafting seamless digital 
             <br />
@@ -36,7 +36,7 @@ const Home = () => {
           </button>
         </div>
         </div>
-      </div>
+      </section>
       {/* STATS DIV */}
       <div className='flex gap-12 items-center justify-center py-5 border-y mt-15 border-[#18181A]'>
         {

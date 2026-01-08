@@ -1,6 +1,5 @@
 "use client";
 
-import React, { useState } from 'react'
 import { Button } from '../ui/button'
 import { ArrowUp, Mail, User, Zap } from 'lucide-react'
 import Link from 'next/link'
@@ -18,7 +17,7 @@ const LeftSidebar = () => {
   const pathName = usePathname();
   
   return (
-    <section className='flex flex-col items-end justify-between border-r pl-18 pr-12 py-12 bg-[#0F0F0F] max-lg:hidden '>
+    <section className='flex flex-col items-end justify-between border-r pl-18 pr-12 py-12 bg-[#0F0F0F] max-lg:hidden border-[#18181A]'>
       <Image 
       src={"/profile.svg"}
       alt='profile_icon'
