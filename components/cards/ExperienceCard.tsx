@@ -31,12 +31,12 @@ const ExperienceCard = ({
         <div className='flex gap-2 justify-center items-center'>
           
           {/* LOGO */}
-          <div className='w-12.5 h-12.5 rounded-md bg-[#18181A] flex items-center justify-center'>
-            {/* <img
+          <div className='w-14.5 h-14.5 p-2 rounded-md bg-[#18181A] flex items-center justify-center'>
+            <img
               src={logo}
               alt={`${companyName} logo`}
               className='w-full h-full object-contain rounded-md'
-            /> */}
+            />
           </div>
 
           {/* COMPANY INFO */}
@@ -64,7 +64,7 @@ const ExperienceCard = ({
 
       {/* DETAILS */}
       <div className='p-4 rounded-md bg-dark2 mt-5 flex flex-col'>
-        <h4 className='text-heading-xs'>
+        <h4 className='text-heading-xs font-medium'>
           {jobTitle}
         </h4>
 

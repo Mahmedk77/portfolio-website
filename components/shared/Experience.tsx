@@ -15,7 +15,7 @@ const Experince = () => {
           <Briefcase />          
           <h2 className='text-heading-xl font-bold tracking-normal'>My Experience</h2>
         </div>
-        <p className='text-l text-grey60'>Navigating diverse environments with adaptability and expertise for holistic solutions.</p>
+        <p className='text-l text-grey60 font-medium'>Navigating diverse environments with adaptability and expertise for holistic solutions.</p>
       </div>
       {/* CARD */}
       

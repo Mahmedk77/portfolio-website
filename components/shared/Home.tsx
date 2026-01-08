@@ -11,8 +11,12 @@ const Home = () => {
     <>
     {/* INTRODUCTION DIV */}
       <section className='flex gap-2 items-center justify-center'>
-        <div className='w-64 h-64 border rounded-md bg-[#18181A]'>
-          {/* IMAGE */}
+        <div className='w-64 h-64 rounded-md bg-[#18181A]'>
+          <img
+              src={"/userImage.jpg"}
+              alt={"User image at home page"}
+              className='w-full h-full object-contain rounded-md'
+            />
         </div>
         <div className='flex flex-col p-4'>
           <p className='text-heading-m font-semibold text-grey60'>👋 Hello I Am</p>
