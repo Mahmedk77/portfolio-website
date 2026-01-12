@@ -71,7 +71,7 @@ const Stacks = () => {
 
        <div className='mt-7.5'> 
         <div className='flex justify-center items-center px-32 bg-[#18181A] py-2 rounded-md '>
-          <p className='text-heading-xs font-semibold'>Back-end</p>
+          <p className='text-heading-xs font-semibold'>Artificial intelligence</p>
         </div>
         <div className='grid grid-cols-2 gap-2 mt-4 '>
           {

@@ -1,8 +1,10 @@
   "use client";
 
-  import { Dot, Mail, User, Zap } from 'lucide-react'
+import { Dot, Mail, User, Zap } from 'lucide-react'
 import Link from 'next/link';
-  import { usePathname } from 'next/navigation'
+import { usePathname } from 'next/navigation'
+import Ping from "@/components/shared/Ping"
+
 
   const Topbar = () => {
 
@@ -16,12 +18,13 @@ import Link from 'next/link';
 
     return (
 
-      <nav className='px-6 py-6 bg-[rgb(15,15,15)] border-b border-[#18181A]'>
+      <nav className='px-6 py-6 bg-[rgb(15,15,15)] border-b border-[#18181A] '>
         <div className='flex flex-row justify-between items-center '>
-            <div className='max-sm:hidden flex gap-2 items-center justify-center border border-grey40 px-4 py-2 rounded-full bg-[#18181A] '>
-              <Dot color="#00c278"/>
-              <p className='text-s text-grey85 font-medium'>Available For Work</p>
-            </div>
+           <div className='max-sm:hidden flex gap-2 items-center justify-center border border-grey40 px-4 py-2 rounded-full bg-[#18181A] '>
+            <Ping />
+            <p className='text-s text-grey85 font-medium'>Available For Work</p>
+          </div>
+
             <div className='flex gap-4 items-center justify-center max-lg:hidden'>
                 <p className='text-s font-medium text-grey60'>Local Time (IST)</p>
                 <div className='p-2 px-4 bg-[#18181A] border-grey40 rounded-md flex items-center justify-center'>

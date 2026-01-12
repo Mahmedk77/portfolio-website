@@ -18,13 +18,14 @@ const LeftSidebar = () => {
   
   return (
     <section className='flex flex-col items-end justify-between border-r pl-18 pr-12 py-12 bg-[#0F0F0F] max-lg:hidden border-[#18181A]'>
+      <div className='rounded-full border border-grey40'>
       <Image 
-      src={"/profile.svg"}
+      src={"/userImage2.jpg"}
       alt='profile_icon'
       width={64}
       height={64}
-      priority
-      className='object-contain  border rounded-full p-5'/>
+      className='w-full h-full object-contain rounded-full '/>
+      </div>
       <div className='flex flex-col items-center justify-center gap-4'>
         {
           sidebarList.map((item) =>{
@@ -33,7 +34,7 @@ const LeftSidebar = () => {
               <Link 
               key={item.label} href={`${item.route}`} 
               className={`flex rounded-md p-2 ${ isActive ? "bg-[#18181A]" : "bg-none"}
-              hover:bg-[#18181A] transition-all duration-200`}>
+              hover:bg-[#18181A] transition-all duration-300`}>
                 {item.icon}
                 
               </Link>

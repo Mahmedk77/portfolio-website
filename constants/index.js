@@ -52,36 +52,34 @@ export const experiences = [
 
 export const stacks = {
   frontend: [
-    { logo:"", name: "JavaScript", description: "Core Web Language" },
-    { logo:"", name: "TypeScript", description: "Typed JavaScript" },
-    { logo:"", name: "React.js", description: "UI Library" },
-    { logo:"", name: "Next.js", description: "React Framework" },
-    // { logo:"", name: "Tailwind CSS", description: "Utility-First CSS" },
-    // { logo:"", name: "Material UI", description: "UI Component Library" },
+    { logo:"/javascript.svg", name: "JavaScript", description: "Core Web Language" },
+    { logo:"/typescript.svg", name: "TypeScript", description: "Typed JavaScript" },
+    { logo:"/react.svg", name: "React.js", description: "UI Library" },
+    { logo:"/nextjs1.svg", name: "Next.js", description: "React Framework" },
+
     
   ],
 
   backend: [
-    { logo:"", name: "Node.js", description: "Backend Runtime" },
-    { logo:"", name: "Express.js", description: "Web Framework" },
-    { logo:"", name: "PostgreSQL", description: "Relational Database" },
-    { logo:"", name: "MongoDB", description: "NoSQL Database" },
-    // { logo:"", name: "Supabase", description: "Backend Platform" },
-    // { logo:"", name: "REST APIs", description: "Client–Server APIs" }
+    { logo:"/nodejs.svg", name: "Node.js", description: "Backend Runtime" },
+    { logo:"/express.png", name: "Express.js", description: "Web Framework" },
+    { logo:"/sql.svg", name: "PostgreSQL", description: "Relational Database" },
+    { logo:"/mongo.svg", name: "MongoDB", description: "NoSQL Database" },
+
   ],
 
   tools: [
-    { logo:"", name: "Docker Compose", description: "Multi-Container Setup" },
-    { logo:"", name: "GitHub Actions", description: "CI/CD Automation" },
-    { logo:"", name: "Docker Hub", description: "Image Registry" },
-    { logo:"", name: "Kubernetes", description: "Container Orchestration" }
+    { logo:"/docker2.svg", name: "Docker Compose", description: "Multi-Container Setup" },
+    { logo:"/github3.svg", name: "GitHub Actions", description: "CI/CD Automation" },
+    { logo:"/container.svg", name: "Docker Hub", description: "Image Registry" },
+    { logo:"/kubernetes1.svg", name: "Kubernetes", description: "Container Orchestration" }
 
   ],
 
   ai: [
-    { logo:"", name: "OpenAI API", description: "AI Integration" },
-    { logo:"", name: "LangChain", description: "LLM Framework" },
-    { logo:"", name: "Hugging Face", description: "AI Models" },
-    { logo: "", name: "Cursor", description: "AI Code Editor" }
+    { logo:"/ai.svg", name: "OpenAI API", description: "AI Integration" },
+    { logo:"/chain2.svg", name: "LangChain", description: "LLM Framework" },
+    { logo:"/faceai.svg", name: "Hugging Face", description: "AI Models" },
+    { logo: "/cursor2.svg", name: "Cursor", description: "AI Code Editor" }
   ]
 };

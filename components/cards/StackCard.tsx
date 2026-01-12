@@ -14,13 +14,13 @@ const StackCard = ({
     <>
     <div className="group flex justify-between items-center px-3.5 
         py-4 bg-dark4 rounded-lg hover:bg-dark7 
-        border-dark8 transition-all duration-200 ">
+        border-dark8 transition-all duration-300 ">
      <div className='flex gap-2 items-center justify-center'>
-        <div className='w-11.5 h-11.5 p-2 rounded-md bg-[#18181A] flex items-center justify-center border-dark13 shadow-md'>
+    <div className='w-11.5 h-11.5 p-2 rounded-md bg-[#18181A] flex items-center justify-center border-dark13 shadow-md'>
              <img
               src={logo}
               alt={`stack logo`}
-              className='w-full h-full object-contain rounded-md'
+              className='w-full h-full object-contain'
             />
         </div>
             <div className='flex flex-col justify-center'>
