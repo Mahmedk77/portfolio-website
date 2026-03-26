@@ -11,11 +11,11 @@ const Home = () => {
     <>
     {/* INTRODUCTION DIV */}
       <section className='flex gap-2 items-center justify-center'>
-        <div className='w-64 h-64 rounded-md bg-[#18181A]'>
+        <div className='w-64 h-64 rounded-md bg-[#18181A] '>
           <img
-              src={"/userImage.jpg"}
+              src={"/userImage4.png"}
               alt={"User image at home page"}
-              className='w-full h-full object-contain rounded-md'
+              className='w-full h-full object-cover rounded-md border border-white'
             />
         </div>
         <div className='flex flex-col p-4'>
