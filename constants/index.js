@@ -1,3 +1,5 @@
+import { Table2, Globe, Palette, TrendingUp } from "lucide-react";
+
 export const experiences = [
   {
     id: 1,
@@ -83,3 +85,31 @@ export const stacks = {
     { logo: "/cursor2.svg", name: "Cursor", description: "AI Code Editor" }
   ]
 };
+
+
+export const services = [
+  {
+    icon: <Table2 size={30} strokeWidth={1.5} />,
+    heading: "Web Design",
+    description:
+      "Crafting visually captivating and user-friendly\n websites for online success.",
+  },
+  {
+    icon: <Globe size={30} strokeWidth={1.5} /> ,
+    heading: "Web Development",
+    description:
+      "Bringing ideas to life with robust and scalable web solutions.",
+  },
+  {
+    icon: <Palette size={30} strokeWidth={1.5} />,
+    heading: "Graphic Design",
+    description:
+      "Creating visually stunning designs that captivate and engage audiences.",
+  },
+  {
+    icon: <TrendingUp size={30} strokeWidth={1.5} />,
+    heading: "SEO Optimization",
+    description:
+      "Elevating online visibility and driving organic traffic through strategies.",
+  },
+];

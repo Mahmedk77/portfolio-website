@@ -2,19 +2,17 @@ import { stacks } from '@/constants';
 import { ArrowRight, Layers } from 'lucide-react'
 import React from 'react'
 import StackCard from '../cards/StackCard';
+import Heading from './Heading';
 
 const Stacks = () => {
   const flag = false;
   return (
     <>
     <section className='px-32 text-white'> 
-      <div className='flex flex-col gap-2'>
-        <div className='flex gap-2 justify-start items-center'>
-        <Layers />          
-        <h2 className='text-heading-xl font-bold tracking-normal'>My Stacks</h2>
-        </div>
-        <p className='text-l text-grey60 font-medium'>Focused on building modern and high-performance web applications. </p>
-      </div>
+
+        <Heading  icon={<Layers />} heading={"My Stacks"} 
+        description={"Focused on building modern and high-performance web applications."} />
+        
       <div className='mt-7.5'> 
         <div className='flex justify-center items-center px-32 bg-[#18181A] py-2 rounded-md '>
           <p className='text-heading-xs font-semibold'>Front-end</p>

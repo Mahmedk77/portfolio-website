@@ -1,6 +1,7 @@
-import { Briefcase } from 'lucide-react'
+import { Briefcase} from 'lucide-react'
 import ExperienceCard from "@/components/cards/ExperienceCard"
 import { experiences } from "@/constants/index"
+import Heading from './Heading'
 
 
 
@@ -10,13 +11,15 @@ const Experince = () => {
   return (
     <>
     <section className='px-32 text-white'> 
-      <div className='flex flex-col gap-2'>
+
+        <Heading  icon={<Briefcase />} heading={"My Experience"} description={"Navigating diverse environments with adaptability and expertise for holistic solutions."} />
+      {/* <div className='flex flex-col gap-2'>
         <div className='flex gap-2 justify-start items-center'>
           <Briefcase />          
           <h2 className='text-heading-xl font-bold tracking-normal'>My Experience</h2>
         </div>
         <p className='text-l text-grey60 font-medium'>Navigating diverse environments with adaptability and expertise for holistic solutions.</p>
-      </div>
+      </div> */}
       {/* CARD */}
       
           {/* HEADER */}

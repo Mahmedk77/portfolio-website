@@ -1,6 +1,7 @@
 import Home from "@/components/shared/Home"
 import Experince from "@/components/shared/Experience"
 import Stacks from "@/components/shared/Stacks"
+import Services from "@/components/shared/Services"
 
 const page = () => {
   return (
@@ -13,6 +14,9 @@ const page = () => {
     </div>
     <div className="mt-25">
       <Stacks />
+    </div>
+    <div className="mt-25">
+      <Services />
     </div>
   </section>
   )
