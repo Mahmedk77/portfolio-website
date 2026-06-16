@@ -1,6 +1,5 @@
 import { stacks } from '@/constants';
 import { Layers } from 'lucide-react'
-import StackCard from '../cards/StackCard';
 import Heading from './Heading';
 
 const stackCategories = [
@@ -23,14 +22,27 @@ const Stacks = () => {
           <div className='flex justify-center items-center bg-[#18181A] py-2 rounded-md'>
             <p className='text-heading-xs font-semibold'>{label}</p>
           </div>
-          <div className='grid grid-cols-1 sm:grid-cols-2 gap-2 mt-4'>
+          <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 mt-4'>
             {stacks[key].map((stack) => (
-              <StackCard
+              <div
                 key={stack.name}
-                logo={stack.logo}
-                name={stack.name}
-                description={stack.description}
-              />
+                className='group flex flex-col items-center justify-center gap-2.5 py-5 px-3
+                  bg-[#111113] rounded-lg cursor-default
+                  hover:bg-[#1e1e21] hover:scale-105 hover:-translate-y-1.5
+                  transition-all duration-200 ease-out
+                  shadow-sm hover:shadow-md hover:shadow-black/40'
+              >
+                <div className='w-10 h-10 flex items-center justify-center'>
+                  <img
+                    src={stack.logo}
+                    alt={stack.name}
+                    className='w-full h-full object-contain'
+                  />
+                </div>
+                <p className='text-s font-medium text-grey60 group-hover:text-grey85 transition-colors duration-200 text-center leading-tight'>
+                  {stack.name}
+                </p>
+              </div>
             ))}
           </div>
         </div>

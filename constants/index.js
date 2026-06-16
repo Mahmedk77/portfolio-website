@@ -80,6 +80,40 @@ export const stacks = {
 };
 
 
+export const projects = [
+  {
+    id: 1,
+    name: "Social Media Platform (Threads Clone)",
+    image: null,
+    tags: ["Next.js", "TypeScript", "MongoDB", "Clerk"],
+    description:
+      "Production social platform with threaded comments, nested replies, community pages, and infinite scroll. Server-side auth and Zod-validated serverless routes.",
+    github: "https://github.com/Mahmedk77/threads_app",
+    live: "https://threads-app-taupe.vercel.app/",
+  },
+  {
+    id: 2,
+    name: "Full-Stack E-Commerce Platform",
+    image: null,
+    tags: ["React.js", "Node.js", "MongoDB", "Stripe"],
+    description:
+      "Production-ready store with JWT auth, cart management, Stripe payments, role-based admin dashboard, and optimized MongoDB queries.",
+    github: "https://github.com/Mahmedk77/ecommerce",
+    live: "https://ecommerce-navy-pi.vercel.app/",
+  },
+  {
+    id: 3,
+    name: "Pitchify — Startup Pitch Platform",
+    image: null,
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Sanity CMS"],
+    description:
+      "Startup idea discovery platform powered by Sanity CMS with advanced keyword search, category filters, and real-time view tracking.",
+    github: "https://github.com/Mahmedk77/pitchify",
+    live: "https://pitchify-mu.vercel.app/",
+  },
+];
+
+
 export const services = [
   {
     icon: <Globe size={30} strokeWidth={1.5} />,

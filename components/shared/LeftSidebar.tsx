@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from '../ui/button'
-import { ArrowUp, Mail, User, Zap } from 'lucide-react'
+import { ArrowUp, FolderGit2, Layers, Mail, User, Zap } from 'lucide-react'
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
@@ -44,6 +44,8 @@ const TooltipButton = ({ item, isActive }: { item: NavItem; isActive: boolean })
 
 const navItems: NavItem[] = [
   { label: "Home", sectionId: "home", icon: <User className="text-grey60" size={30} /> },
+  { label: "Stacks", sectionId: "stacks", icon: <Layers className="text-grey60" size={30} /> },
+  { label: "Projects", sectionId: "projects", icon: <FolderGit2 className="text-grey60" size={30} /> },
   { label: "Services", sectionId: "services", icon: <Zap className="text-grey60" size={30} /> },
   { label: "Contact", sectionId: "contact", icon: <Mail className="text-grey60" size={30} /> },
 ];
@@ -56,7 +58,7 @@ const LeftSidebar = () => {
     if (!container) return
 
     const handleScroll = () => {
-      const sectionIds = ['home', 'experience', 'stacks', 'services', 'contact']
+      const sectionIds = ['home', 'experience', 'stacks', 'projects', 'services', 'contact']
       const containerRect = container.getBoundingClientRect()
       let current = 'home'
 

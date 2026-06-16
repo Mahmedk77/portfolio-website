@@ -1,6 +1,7 @@
 import Home from "@/components/shared/Home"
 import Experience from "@/components/shared/Experience"
 import Stacks from "@/components/shared/Stacks"
+import Projects from "@/components/shared/Projects"
 import Services from "@/components/shared/Services"
 import Contact from "@/components/shared/Contact"
 
@@ -15,6 +16,9 @@ const page = () => {
       </div>
       <div id="stacks" className="mt-20">
         <Stacks />
+      </div>
+      <div id="projects" className="mt-20">
+        <Projects />
       </div>
       <div id="services" className="mt-20">
         <Services />
