@@ -2,19 +2,21 @@
 
 import { Button } from '../ui/button'
 import { ArrowUp, Mail, User, Zap } from 'lucide-react'
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-interface SidebarItem {
+interface NavItem {
   label: string;
-  route: string;
+  sectionId: string;
   icon: React.ReactNode;
 }
 
-const TooltipLink = ({ item, isActive }: { item: SidebarItem; isActive: boolean }) => {
+const TooltipButton = ({ item, isActive }: { item: NavItem; isActive: boolean }) => {
   const [hovered, setHovered] = useState<boolean>(false);
+
+  const scrollToSection = () => {
+    document.getElementById(item.sectionId)?.scrollIntoView({ behavior: 'smooth' })
+  }
 
   return (
     <div
@@ -22,14 +24,13 @@ const TooltipLink = ({ item, isActive }: { item: SidebarItem; isActive: boolean 
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <Link
-        href={item.route}
-        className={`flex rounded-md p-2 ${isActive ? "bg-[#18181A]" : "bg-none"} hover:bg-[#18181A] transition-all duration-500`}
+      <button
+        onClick={scrollToSection}
+        className={`flex rounded-md p-2 ${isActive ? "bg-[#18181A]" : ""} hover:bg-[#18181A] transition-all duration-500 cursor-pointer`}
       >
         {item.icon}
-      </Link>
+      </button>
 
-      {/* Tooltip */}
       <div className={`absolute left-12 z-50 px-4 py-2 rounded-lg bg-[#18181A] text-white text-heading-xs font-medium tracking-widest whitespace-nowrap
         border border-[#2a2a2a] shadow-lg transition-all duration-200
         ${hovered ? "opacity-100 translate-x-5 pointer-events-auto" : "opacity-0 -translate-x-1 pointer-events-none"}`}
@@ -41,14 +42,42 @@ const TooltipLink = ({ item, isActive }: { item: SidebarItem; isActive: boolean 
   );
 };
 
-const LeftSidebar = () => {
-  const sidebarList: SidebarItem[] = [
-    { label: "Home", route: "/", icon: <User className="text-grey60" size={30} /> },
-    { label: "Services", route: "/services", icon: <Zap className="text-grey60" size={30} /> },
-    { label: "Contact", route: "/contact", icon: <Mail className="text-grey60" size={30} /> },
-  ];
+const navItems: NavItem[] = [
+  { label: "Home", sectionId: "home", icon: <User className="text-grey60" size={30} /> },
+  { label: "Services", sectionId: "services", icon: <Zap className="text-grey60" size={30} /> },
+  { label: "Contact", sectionId: "contact", icon: <Mail className="text-grey60" size={30} /> },
+];
 
-  const pathName = usePathname();
+const LeftSidebar = () => {
+  const [activeSection, setActiveSection] = useState('home')
+
+  useEffect(() => {
+    const container = document.querySelector('.main-scroll-container')
+    if (!container) return
+
+    const handleScroll = () => {
+      const sectionIds = ['home', 'experience', 'stacks', 'services', 'contact']
+      const containerRect = container.getBoundingClientRect()
+      let current = 'home'
+
+      for (const id of sectionIds) {
+        const el = document.getElementById(id)
+        if (!el) continue
+        const elRect = el.getBoundingClientRect()
+        if (elRect.top - containerRect.top <= containerRect.height * 0.4) {
+          current = id
+        }
+      }
+      setActiveSection(current)
+    }
+
+    container.addEventListener('scroll', handleScroll)
+    return () => container.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  const scrollToTop = () => {
+    document.querySelector('.main-scroll-container')?.scrollTo({ top: 0, behavior: 'smooth' })
+  }
 
   return (
     <section className='flex flex-col items-end justify-between border-r pl-18 pr-12 py-12 bg-[#0F0F0F] max-lg:hidden border-[#18181A]'>
@@ -63,14 +92,20 @@ const LeftSidebar = () => {
       </div>
 
       <div className='flex flex-col items-center justify-center gap-4'>
-        {sidebarList.map((item) => {
-          const isActive = (pathName.includes(item.route) && item.route.length > 1) || pathName === item.route;
-          return <TooltipLink key={item.label} item={item} isActive={isActive} />;
-        })}
+        {navItems.map((item) => (
+          <TooltipButton
+            key={item.label}
+            item={item}
+            isActive={activeSection === item.sectionId}
+          />
+        ))}
       </div>
 
       <div>
-        <Button className='bg-[#0F0F0F] hover:bg-[#18181A] cursor-pointer transition-all p-4  duration-300'>
+        <Button
+          onClick={scrollToTop}
+          className='bg-[#0F0F0F] hover:bg-[#18181A] cursor-pointer transition-all p-4 duration-300'
+        >
           <ArrowUp className="text-grey60 size-6" />
         </Button>
       </div>

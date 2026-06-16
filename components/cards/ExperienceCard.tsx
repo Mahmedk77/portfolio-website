@@ -27,7 +27,7 @@ const ExperienceCard = ({
   return (
     <>
       {/* HEADER */}
-      <div className='flex justify-between items-center '>
+      <div className='flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3'>
         <div className='flex gap-2 justify-center items-center'>
           
           {/* LOGO */}
@@ -57,7 +57,7 @@ const ExperienceCard = ({
         </div>
 
         {/* DURATION */}
-        <p className='text-heading-l font-bold'>
+        <p className='text-heading-s sm:text-heading-l font-bold sm:flex-shrink-0 text-grey60 sm:text-white'>
           {duration}
         </p>
       </div>
