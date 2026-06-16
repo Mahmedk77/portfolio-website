@@ -1,4 +1,4 @@
-import { Table2, Globe, Palette, TrendingUp } from "lucide-react";
+import { Globe, Workflow, Bot, BarChart2 } from "lucide-react";
 
 export const experiences = [
   {
@@ -6,110 +6,103 @@ export const experiences = [
     logo: "/mk.png",
     companyName: "Manaknight Digital",
     companyType: "Tech Firm",
-    companyLink:"https://manaknightdigital.com",
-    companyWebsite: "manaknight.com",
-    duration: "Mar – Dec 2025",
-    jobTitle: "Quality Assurance Engineer",
+    companyLink: "https://manaknightdigital.com",
+    companyWebsite: "manaknightdigital.com",
+    duration: "Apr 2026 – Present",
+    jobTitle: "Data & AI Operations Specialist",
     jobDescription:
-      "Ensured product quality through manual testing, API validation, and cross-platform verification while collaborating closely with designers and developers."
+      "Evaluating AI models across 13+ standardized tasks, automating data collection pipelines across 300+ websites using Python and Playwright, and benchmarking LLM outputs with structured scorecards for tool selection decisions.",
   },
   {
     id: 2,
-    logo: "/walee.png",
-    companyName: "Walee Lab",
-    companyType: "Tech Startup",
-    companyLink:"https://walee.pk/",
-    companyWebsite: "waleelab.com",
-    duration: "Jun – Nov 2024",
-    jobTitle: "Web Developer",
+    logo: "/mk.png",
+    companyName: "Manaknight Digital",
+    companyType: "Tech Firm",
+    companyLink: "https://manaknightdigital.com",
+    companyWebsite: "manaknightdigital.com",
+    duration: "Dec 2024 – Feb 2026",
+    jobTitle: "Full-Stack Developer",
     jobDescription:
-      "Developed responsive React-based interfaces and internal tools, integrating frontend components with backend services in an agile team environment."
+      "Built and maintained production web systems across 5+ live products, including REST API development, backend data architecture, and database schema design across MongoDB and PostgreSQL. Designed automated testing infrastructure reducing bug escape rate by 40%, and contributed to frontend and backend integration.",
   },
   {
     id: 3,
-    logo: "/teckno.png",
-    companyName: "Vitesse",
-    companyType: "UAV Team",
-    companyLink:"https://www.teknofest.org/en/competitions/competition_report_detail/8163",
-    companyWebsite: "vitesse.teknofest.org",
-    duration: "Sep 2025",
-    jobTitle: "Manufacturing Lead",
+    logo: "/walee.png",
+    companyName: "Walee Lab",
+    companyType: "Tech Startup",
+    companyLink: "https://walee.pk/",
+    companyWebsite: "walee.pk",
+    duration: "Jun – Aug 2024",
+    jobTitle: "Full-Stack Developer Intern",
     jobDescription:
-      "Led manufacturing for an international UAV competition, building an autonomous mobile landing platform using computer vision and embedded systems."
+      "Built responsive React.js UI components and integrated Node.js REST APIs for internal tools. Contributed to agile sprints via GitHub with a focus on component reusability and performance.",
   },
   {
     id: 4,
-    logo: "/nust.png",
-    companyName: "RISE Lab, NUST",
-    companyType: "R&D Lab",
-    companyLink:"https://smme.nust.edu.pk/department-page/lab-facilities-4/",
-    companyWebsite: "smme.nust.edu.pk",  
-    duration: "Dec 2023",
-    jobTitle: "Python Developer",
+    logo: "/teckno.png",
+    companyName: "Team Vitesse NUST",
+    companyType: "UAV Team",
+    companyLink: "https://www.teknofest.org/en/",
+    companyWebsite: "teknofest.org",
+    duration: "Oct 2024 – Oct 2025",
+    jobTitle: "Manufacturing Lead",
     jobDescription:
-      "Strengthened Python fundamentals by developing small applications focused on automation, algorithms, and logical problem solving."
-  }
+      "Led end-to-end UAV and UGV manufacturing for TEKNOFEST 2025 in Istanbul, Turkey. Built an autonomous mobile landing platform using OpenCV, ArUco marker detection, ROS, and a Pixhawk and Raspberry Pi hardware stack.",
+  },
 ];
 
 
 export const stacks = {
   frontend: [
-    { logo:"/javascript.svg", name: "JavaScript", description: "Core Web Language" },
-    { logo:"/typescript.svg", name: "TypeScript", description: "Typed JavaScript" },
-    { logo:"/react.svg", name: "React.js", description: "UI Library" },
-    { logo:"/nextjs1.svg", name: "Next.js", description: "React Framework" },
-
-    
+    { logo: "/javascript.svg", name: "JavaScript", description: "Core Web Language" },
+    { logo: "/typescript.svg", name: "TypeScript", description: "Typed JavaScript" },
+    { logo: "/react.svg", name: "React.js", description: "UI Library" },
+    { logo: "/nextjs1.svg", name: "Next.js", description: "React Framework" },
   ],
 
   backend: [
-    { logo:"/nodejs.svg", name: "Node.js", description: "Backend Runtime" },
-    { logo:"/express.png", name: "Express.js", description: "Web Framework" },
-    { logo:"/sql.svg", name: "PostgreSQL", description: "Relational Database" },
-    { logo:"/mongo.svg", name: "MongoDB", description: "NoSQL Database" },
-
+    { logo: "/nodejs.svg", name: "Node.js", description: "Backend Runtime" },
+    { logo: "/express.png", name: "Express.js", description: "Web Framework" },
+    { logo: "/sql.svg", name: "PostgreSQL", description: "Relational Database" },
+    { logo: "/mongo.svg", name: "MongoDB", description: "NoSQL Database" },
   ],
 
-  tools: [
-    { logo:"/docker2.svg", name: "Docker Compose", description: "Multi-Container Setup" },
-    { logo:"/github3.svg", name: "GitHub Actions", description: "CI/CD Automation" },
-    { logo:"/container.svg", name: "Docker Hub", description: "Image Registry" },
-    { logo:"/kubernetes1.svg", name: "Kubernetes", description: "Container Orchestration" }
-
+  automation: [
+    { logo: "/python.svg", name: "Python", description: "Scripting & Automation" },
+    { logo: "/playwright.svg", name: "Playwright", description: "Browser Automation" },
+    { logo: "/beautifulsoup.svg", name: "BeautifulSoup", description: "HTML Parsing" },
+    { logo: "/serpapi.svg", name: "SerpAPI", description: "Search Data API" },
+    { logo: "/chain2.svg", name: "LangChain", description: "LLM Framework" },
+    { logo: "/ai.svg", name: "OpenAI API", description: "AI Integration" },
+    { logo: "/faceai.svg", name: "Hugging Face", description: "AI Models" },
+    { logo: "/vercel.svg", name: "Vercel AI SDK", description: "AI Streaming SDK" },
   ],
-
-  ai: [
-    { logo:"/ai.svg", name: "OpenAI API", description: "AI Integration" },
-    { logo:"/chain2.svg", name: "LangChain", description: "LLM Framework" },
-    { logo:"/faceai.svg", name: "Hugging Face", description: "AI Models" },
-    { logo: "/cursor2.svg", name: "Cursor", description: "AI Code Editor" }
-  ]
 };
 
 
 export const services = [
   {
-    icon: <Table2 size={30} strokeWidth={1.5} />,
-    heading: "Web Design",
+    icon: <Globe size={30} strokeWidth={1.5} />,
+    heading: "Web Application Development",
     description:
-      "Crafting visually captivating and user-friendly\n websites for online success.",
+      "Building full-stack web apps using Next.js, React, and Node.js. Fast, scalable, and production-ready.",
   },
   {
-    icon: <Globe size={30} strokeWidth={1.5} /> ,
-    heading: "Web Development",
+    icon: <Workflow size={30} strokeWidth={1.5} />,
+    heading: "Automation and Data Pipelines",
     description:
-      "Bringing ideas to life with robust and scalable web solutions.",
+      "Scraping, processing, and monitoring data from any public source. Automated workflows that run without manual intervention.",
   },
   {
-    icon: <Palette size={30} strokeWidth={1.5} />,
-    heading: "Graphic Design",
+    icon: <Bot size={30} strokeWidth={1.5} />,
+    heading: "AI Integration",
     description:
-      "Creating visually stunning designs that captivate and engage audiences.",
+      "Adding LLM-powered features to existing products. Chatbots, content generation, and evaluation systems using OpenAI API and LangChain.",
   },
   {
-    icon: <TrendingUp size={30} strokeWidth={1.5} />,
-    heading: "SEO Optimization",
+    icon: <BarChart2 size={30} strokeWidth={1.5} />,
+    heading: "Business Intelligence Dashboards",
     description:
-      "Elevating online visibility and driving organic traffic through strategies.",
+      "Custom dashboards that pull live data and surface insights your team actually uses.",
   },
 ];

@@ -17,8 +17,8 @@ const contactLinks = [
   },
   {
     label: "LinkedIn",
-    value: "Update your LinkedIn URL",
-    href: "https://linkedin.com",
+    value: "linkedin.com/in/mahmedkk",
+    href: "https://linkedin.com/in/mahmedkk",
     icon: <Linkedin className="text-grey60" size={24} />,
   },
   {

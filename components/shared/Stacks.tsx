@@ -6,8 +6,7 @@ import Heading from './Heading';
 const stackCategories = [
   { label: 'Front-end', key: 'frontend' as const },
   { label: 'Back-end', key: 'backend' as const },
-  { label: 'Tools', key: 'tools' as const },
-  { label: 'Artificial Intelligence', key: 'ai' as const },
+  { label: 'Automation and AI', key: 'automation' as const },
 ]
 
 const Stacks = () => {

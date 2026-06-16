@@ -11,7 +11,7 @@ const socialLinks = [
   },
   {
     label: "LinkedIn",
-    href: "https://linkedin.com",
+    href: "https://linkedin.com/in/mahmedkk",
     icon: <Linkedin className="text-grey60" size={25} />,
   },
   {

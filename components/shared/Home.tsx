@@ -1,10 +1,10 @@
 import { CalendarDays, Mail } from "lucide-react"
 
 const stats = [
-  { id: 1, title: "Happy Clients", value: 52 },
-  { id: 2, title: "Years of Experience", value: 2 },
-  { id: 3, title: "Completed Tasks", value: 40 },
-  { id: 4, title: "Awards Received", value: 10 },
+  { id: 1, title: "Years of Experience", value: 2 },
+  { id: 2, title: "Live Projects", value: 6 },
+  { id: 3, title: "International Competition", value: 1 },
+  { id: 4, title: "Tech Stacks", value: 4 },
 ]
 
 const Home = () => {
