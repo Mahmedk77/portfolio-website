@@ -29,7 +29,7 @@ export default function RootLayout({
           <LeftSidebar />
           <section className="flex min-h-screen flex-1 flex-col overflow-hidden">
             <Topbar />
-            <div className="main-scroll-container px-4 sm:px-8 md:px-12 lg:px-16 py-10 lg:py-16 bg-[rgb(15,15,15)] w-full overflow-y-scroll max-h-screen no-scrollbar">
+            <div className="main-scroll-container px-4.5 sm:px-8 md:px-12 lg:px-16 py-10 lg:py-16 bg-[rgb(15,15,15)] w-full overflow-y-scroll max-h-screen no-scrollbar">
               {children}
             </div>
           </section>
